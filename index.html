@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024001</title> <!-- Replace 2024001 with your roll number -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Processor</h1>
+        <form id="jsonForm">
+            <label for="jsonInput">Enter JSON:</label>
+            <textarea id="jsonInput" rows="4" cols="50" placeholder='{"data": ["A", "C", "z"]}'></textarea>
+            <button type="submit">Submit</button>
+            <p id="error" class="error"></p>
+        </form>
+        <div id="dropdownContainer" style="display: none;">
+            <label for="filter">Filter:</label>
+            <select id="filter" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highestLowercase">Highest lowercase alphabet</option>
+            </select>
+            <button id="applyFilter">Apply Filter</button>
+        </div>
+        <div id="response"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
